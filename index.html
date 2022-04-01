@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туршилт</title>
+</head>
+<body>
+    <div class="ui container">
+        <div class="row logo">
+            <a href="https://smns.msue.edu.mn" class="ui medium image">
+                <img src="./src/logo-blue.png">
+              </a>
+              
+            </div>
+            <!-- Message heseg -->
+            <div class="ui icon blue message">
+                <i class="inbox icon"></i>
+                <div class="content">
+                  <div class="header">
+                    Салбар сургууль тус бүрийн мэдээлэлтэй танилцахыг хүсэж байна уу?
+                  </div>
+                  <p>Нэрэн дээр нь дарахад л болно.</p>
+                </div>
+              </div>
+              <!-- Buttons -->
+              <div class="buttonList">
+                    <button class="fluid ui green button phys">Физикын тэнхим</button>
+                    <button class="fluid ui green button it">Мэдээлэл зүйн тэнхим</button>
+                    <button class="fluid ui green button math">Математикийн тэнхим</button>
+                    <button class="fluid ui green button geo">Газар зүйн тэнхим</button>
+                    <button class="fluid ui green button chem">Химийн тэнхим</button>
+                    <button class="fluid ui green button bio">Биологийн тэнхим</button>
+              </div>
+
+              
+            
+    </div>
+
+    <div class="ui basic modal phys">
+        <img src="./src/alll-brochuersPhysics.png">
+      </div>
+
+      <div class="ui basic modal it">
+        <img src="./src/alll-brochuersmzuin.png">
+      </div>
+
+      <div class="ui basic modal math">
+        <img src="./src/alll-brochuersmath.png">
+      </div>
+
+      <div class="ui basic modal geo">
+        <img src="./src/alll-brochuersgeoprahy.png">
+      </div>
+
+      <div class="ui basic modal chem">
+        <img src="./src/alll-brochuerschemistry-.png">
+      </div>
+
+      <div class="ui basic modal bio">
+        <h1> Мэдээлэл опсо</h1>
+      </div>
+
+    <script> 
+        $(document).ready(function(){
+            $('.phys.button').click(function(){
+                $('.modal.phys').modal('show');   
+        });
+        });
+
+        $(document).ready(function(){
+            $('.button.it').click(function(){
+                $('.modal.it').modal('show');   
+        });
+        });
+
+        $(document).ready(function(){
+            $('.button.math').click(function(){
+                $('.modal.math').modal('show');   
+        });
+        });
+
+        $(document).ready(function(){
+            $('.button.geo').click(function(){
+                $('.modal.geo').modal('show');   
+        });
+        });
+
+        $(document).ready(function(){
+            $('.button.chem').click(function(){
+                $('.modal.chem').modal('show');   
+        });
+        });
+
+        $(document).ready(function(){
+            $('.button.bio').click(function(){
+                $('.modal.bio').modal('show');   
+        });
+        });
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
